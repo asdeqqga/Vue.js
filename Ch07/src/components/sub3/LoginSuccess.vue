@@ -13,7 +13,9 @@ import { computed } from "vue";
 const store = useStore();
 const router = useRouter();
 
-const user = computed(() => store.getters.getUser);
+const user = computed(() => {
+  return store.getters.getUser;
+});
 console.log(user);
 
 const logout = () => {
