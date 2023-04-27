@@ -57,7 +57,7 @@ const btnWrite = () => {
   article.uid = user.uid;
   //console.log(article);
   axios
-    .post("http://localhost:8080/Voard/write", article)
+    .post("/write", article)
     .then((response) => {
       console.log(response);
       //alert('등록 완료...');
